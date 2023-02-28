@@ -48,7 +48,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MigrateDatabase();
-
+app.UseCrossOriginResourceSharing();
 app.UseAuthorization();
 
 app.UseMiddleware<LoggingMiddleware>();
